@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 245.89 151.81">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-family: PPFraktionMono-Regular, 'PP Fraktion Mono';
+        font-size: 7.31px;
+      }
+
+      .cls-2 {
+        letter-spacing: -.1em;
+      }
+
+      .cls-3 {
+        letter-spacing: -.12em;
+      }
+
+      .cls-4 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-5 {
+        letter-spacing: .02em;
+      }
+
+      .cls-6 {
+        letter-spacing: .04em;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <text class="cls-1" transform="translate(193.29 13.71)"><tspan x="0" y="0">Tupu-ā-rangi</tspan></text>
+      <text class="cls-1" transform="translate(196.06 79.81)"><tspan x="0" y="0">Tupu-ā-nuku</tspan></text>
+      <text class="cls-1" transform="translate(137.21 69.78)"><tspan x="0" y="0">Matariki</tspan></text>
+      <text class="cls-1" transform="translate(113.18 103.1)"><tspan x="0" y="0">Waitī</tspan></text>
+      <text class="cls-1" transform="translate(72.48 149.88)"><tspan x="0" y="0">Pōhutukawa</tspan></text>
+      <text class="cls-1" transform="translate(32.42 119.41)"><tspan class="cls-6" x="0" y="0">W</tspan><tspan class="cls-2" x="4.68" y="0">a</tspan><tspan class="cls-4" x="8.33" y="0">i</tspan><tspan x="12.42" y="0">tā</tspan></text>
+      <text class="cls-1" transform="translate(0 73.06)"><tspan x="0" y="0">Hiwa-i-te-rangi</tspan></text>
+      <text class="cls-1" transform="translate(87.29 46.45)"><tspan x="0" y="0">Ururangi</tspan></text>
+      <text class="cls-1" transform="translate(41.54 6.14)"><tspan class="cls-5" x="0" y="0">W</tspan><tspan class="cls-3" x="4.53" y="0">a</tspan><tspan x="8.04" y="0">ipun-a-rangi</tspan></text>
+    </g>
+  </g>
+</svg>
