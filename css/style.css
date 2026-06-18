@@ -86,7 +86,6 @@ body {
     height: auto;
     z-index: 100;
 }
-
 .hero-logo img {
     width: 100%;
     display: block;
@@ -232,7 +231,26 @@ body {
     animation: dotTwinkle var(--duration) ease-in-out infinite;
     animation-delay: var(--delay);
 }
+.view-events-btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 12px 32px;
+    border: 0.5px solid #b7b7b7;
+    color: #fff;
+    font-family: Ppfraktionmono, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 110%;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    transition: background 0.3s ease, color 0.3s ease;
+}
 
+.view-events-btn:hover {
+    background: #fff;
+    color: #0a0a0a;
+}
 @keyframes dotTwinkle {
     0%   { opacity: 0;   transform: scale(0.5); }
     50%  { opacity: 1;   transform: scale(1); }

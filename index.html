@@ -59,16 +59,15 @@
             Courtenay Precinct over the Matariki public holiday weekend.
         </p>
         <p class="what-body reveal">
-            Across five nights, we'll be activating venues, streets and spaces with
+            Across four nights, we'll be activating venues, streets and spaces with
             contemporary Māori artists, visual artists creating works in public
             view, musicians performing waiata reo Māori across local venues, and kai
             inspired by the natural world Matariki asks us to reflect on.
         </p>
         <p class="what-body reveal">
-            The full programme is being developed now. Artists, venues and event
-            details will be announced in the coming weeks.
+            You can view artists, venues and event details below.
         </p>
-        <p class="what-soon reveal">More Details Coming Soon...</p>
+        <a href="#events" class="view-events-btn reveal">View Events</a>
     </div>
 </section>
 
@@ -127,23 +126,26 @@
 </div>
 
 <div class="about-divider-h"></div>
-
+<div id="sticky-stop"></div>
 <div class="about-divider-v">
     <svg xmlns="http://www.w3.org/2000/svg" width="4" viewBox="0 0 4 132" fill="none" style="height: clamp(60px, 10vw, 132px); display: block;">
         <path d="M1.99999 128C0.895425 128 -5.6342e-06 128.895 -5.68248e-06 130C-5.73076e-06 131.105 0.895425 132 1.99999 132C3.10456 132 3.99999 131.105 3.99999 130C3.99999 128.895 3.10456 128 1.99999 128ZM2 0L1.625 -1.63918e-08L1.62499 130L1.99999 130L2.37499 130L2.375 1.63918e-08L2 0Z" fill="white"/>
     </svg>
 </div>
 
-<section class="section_events reveal">
+<section class="section_events reveal" id="events">
     <div class="events-tabs reveal">
         <button class="events-tab events-tab--active reveal" data-tab="music">Music/ Arts Events</button>
         <button class="events-tab reveal" data-tab="kai">Kai (Food) Events</button>
     </div>
 
-    <p class="events-desc reveal">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    <p class="events-desc events-desc--panel" data-desc="music">
+        Move and be moved by four nights of live entertainment from celebrated Māori artists, musicians and performers. Gather your friends and whānau for experiences that invite connection across the Arts community.
+
+    </p>
+
+    <p class="events-desc events-desc--panel" data-desc="kai" style="display:none;">
+        Savour dishes and drinks inspired by Whenua, Moana, Rangi — Land, Sea and Sky at a local venue near you. Each dish features seasonal ingredients that invites you to connect with the natural world.
     </p>
 
     <div class="events-grid events-panel events-panel--active reveal" data-panel="music">
@@ -304,12 +306,25 @@
     document.querySelectorAll('.events-tab').forEach(tab => {
         tab.addEventListener('click', () => {
             const target = tab.dataset.tab;
+
+            // toggle tabs
             document.querySelectorAll('.events-tab').forEach(t =>
                 t.classList.toggle('events-tab--active', t === tab)
             );
+
+            // toggle panels
             document.querySelectorAll('.events-panel').forEach(p =>
                 p.classList.toggle('events-panel--active', p.dataset.panel === target)
             );
+
+            // toggle descriptions
+            document.querySelectorAll('.events-desc--panel').forEach(d => {
+                if (d.dataset.desc === target) {
+                    d.style.display = 'block';
+                } else {
+                    d.style.display = 'none';
+                }
+            });
         });
     });
 
@@ -410,7 +425,29 @@
 
     createStars(document.querySelector('.section_what'));
 
+    // button (VIEW EVENTS)
+    document.querySelector('.view-events-btn').addEventListener('click', (e) => {
+        e.preventDefault();
+        document.querySelector('#events').scrollIntoView({ behavior: 'smooth' });
+    });
 
+    // for logo to stop being sticky
+    const logo = document.querySelector('.hero-logo');
+    const stickyStop = document.getElementById('sticky-stop');
+
+    const stopObserver = new IntersectionObserver(([entry]) => {
+        if (entry.boundingClientRect.top < 0) {
+            // scrolled past — hide logo
+            logo.style.opacity = '0';
+            logo.style.pointerEvents = 'none';
+        } else {
+            // above the stop point — show logo
+            logo.style.opacity = '1';
+            logo.style.pointerEvents = 'auto';
+        }
+    }, { threshold: 0 });
+
+    stopObserver.observe(stickyStop);
 </script>
 
 
