@@ -284,7 +284,7 @@
 
             <div class="footer-info reveal">
                 <p class="footer-info__body reveal">
-                    For artist enquiries, venue partnerships, or media: Brett McCall on 201 123 4567<br /><br />
+                    For artist enquiries, venue partnerships, or media: Brett McCall on 022 092 7419<br /><br />
                     Matariki Nights is presented by the Wellington Community Revitalisation Society.
                 </p>
             </div>
@@ -301,6 +301,7 @@
                 // stagger each element slightly
                 setTimeout(() => {
                     entry.target.classList.add('visible');
+                    entry.target.style.opacity = '1';
                 }, i * 100);
                 revealObserver.unobserve(entry.target);
             }
@@ -321,9 +322,13 @@
             );
 
             // toggle panels
-            document.querySelectorAll('.events-panel').forEach(p =>
-                p.classList.toggle('events-panel--active', p.dataset.panel === target)
-            );
+            document.querySelectorAll('.events-panel').forEach(p => {
+                const isActive = p.dataset.panel === target;
+                p.classList.toggle('events-panel--active', isActive);
+                if (isActive) {
+                    p.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+                }
+            });
 
             // toggle descriptions
             document.querySelectorAll('.events-desc--panel').forEach(d => {
