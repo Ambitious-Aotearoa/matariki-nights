@@ -641,9 +641,11 @@ body {
     gap: 6px;
     border: 0.5px solid #b7b7b7;
     margin: -0.25px;
+    background-color: #fff;
 }
 
 .event-card__image {
+    position: relative;
     width: 100%;
     aspect-ratio: 187 / 113;
     overflow: hidden;
@@ -656,8 +658,24 @@ body {
     display: block;
 }
 
-.event-card__meta {
+.event-card__badge {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background-color: #ba0000;
     color: #fff;
+    font-family: Ppfraktionmono, Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 100%;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 4px 8px;
+    z-index: 2;
+}
+
+.event-card__meta {
+    color: #0a0a0a;
     text-align: center;
     font-family: Ppfraktionmono, Arial, sans-serif;
     font-size: clamp(12px, 1.2vw, 16px);
@@ -668,7 +686,7 @@ body {
 }
 
 .event-card__name {
-    color: #fff;
+    color: #0a0a0a;
     text-align: center;
     font-family: Ppfraktionmono, Arial, sans-serif;
     font-size: clamp(14px, 1.5vw, 20px);
