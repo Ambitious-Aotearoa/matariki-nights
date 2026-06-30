@@ -697,6 +697,35 @@ body {
     opacity: 0.75;
 }
 
+/* Food cards: greyscale/colour crossfade on hover */
+.event-card__image--food {
+    position: relative;
+}
+
+.event-card__image--food img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.4s ease;
+}
+
+.event-card__image--food .event-card__img-grey {
+    position: relative;
+    opacity: 1;
+}
+
+.event-card__image--food .event-card__img-color {
+    opacity: 0;
+}
+
+.event-card--food:hover .event-card__img-grey {
+    opacity: 0;
+}
+
+.event-card--food:hover .event-card__img-color {
+    opacity: 1;
+}
+
 .event-card__badge {
     position: absolute;
     top: 8px;
@@ -1187,8 +1216,8 @@ body {
 /*}*/
 
 /*.ellipse-bg {*/
-/*    animation: ellipseDrift 12s ease-in-out infinite;*/
-/*    will-change: transform, filter;*/
+/*    animation: ellipseFade 6s ease-in-out infinite;*/
+/*    will-change: opacity, transform;*/
 /*}*/
 
 @keyframes ellipseFade {
