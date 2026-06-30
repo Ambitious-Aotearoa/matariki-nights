@@ -55,8 +55,7 @@
     <div class="what-content reveal">
         <h2 class="what-title">What Is Matariki Nights?</h2>
         <p class="what-body reveal">
-            Matariki Nights is a free, public festival running across Wellington's
-            Courtenay Precinct over the Matariki public holiday weekend.
+            Matariki Nights is a free and ticketed festival running across Pōneke over the Matariki public holiday weekend.
         </p>
         <p class="what-body reveal">
             Across four nights, we'll be activating venues, streets and spaces with
@@ -173,16 +172,16 @@
                 <span class="event-card__badge">FREE</span>
                 <img src="img/rei.jpg" alt="Rei" />
             </div>
-            <p class="event-card__meta reveal">Sat 11 July | Lulu's | 8:30PM</p>
+            <p class="event-card__meta reveal">Sat 11 July | Lulu's | 10:00PM</p>
             <h3 class="event-card__name reveal">Rei</h3>
         </article>
 
         <article class="event-card reveal" data-modal="kenzie">
             <div class="event-card__image reveal">
-                <span class="event-card__badge">FREE</span>
+                <span class="event-card__badge">TICKETS</span>
                 <img src="img/kenzie.jpg" alt="Kenzie From Welly" />
             </div>
-            <p class="event-card__meta reveal">Fri 10 July | Eva Pub | 8:30PM</p>
+            <p class="event-card__meta reveal">Fri 10 July | Eva Pub | 7:00PM</p>
             <h3 class="event-card__name reveal">Kenzie From Welly</h3>
         </article>
 
@@ -200,7 +199,7 @@
                 <span class="event-card__badge">FREE</span>
                 <img src="img/mokos.jpg" alt="The Mokos" />
             </div>
-            <p class="event-card__meta reveal">Sat 11 July | Rogue &amp; Vagabond</p>
+            <p class="event-card__meta reveal">Sat 11 July | Rogue &amp; Vagabond | 9:30PM</p>
             <h3 class="event-card__name reveal">The Mokos</h3>
         </article>
 
@@ -589,11 +588,11 @@
     // ── Event Modal ──────────────────────────────
     const eventData = {
         otis:      { title: 'Otis Frizzell — Live Mural Painting', meta: 'Mon 7 – Wed 9 July | Courtenay Place | All Day', img: 'img/otis-frizzell.jpg', desc: 'One of Aotearoa’s most celebrated pop artists, Otis Frizzell brings his signature vivid style to the streets of Courtenay Place across three days of Matariki Nights. Known for his bold, large-scale public murals that fuse Māori and Pacific imagery with street art aesthetics, Otis will be painting live outside the Readings Complex — a free, public spectacle you can watch take shape in real time. Come back each day to see the work evolve.', btn: null },
-        hollie:    { title: 'Hollie Smith with Darren Mathiassen', meta: 'Wed 8 July | Meow | 8:00PM', img: 'img/hollie-smith.jpg', desc: 'One of New Zealand’s most powerful and soulful voices, Hollie Smith has earned her place as a true icon of Aotearoa music. With a voice that moves between raw vulnerability and commanding power, she performs an intimate Matariki Nights set at Meow accompanied by Darren Mathiassen. Expect stripped-back arrangements that let her extraordinary talent shine, in one of Wellington’s best live music rooms.', btn: 'https://meow.flicket.co.nz/events/47809240-6ff8-4cf6-8a89-3c02e5edc70c' },
-        rei:       { title: 'Rei', meta: 'Sat 11 July | Lulu’s | 8:30PM', img: 'img/rei.jpg', desc: 'Callum Rei McDougall (Ngāti Raukawa) is one of Aotearoa’s most prolific and forward-thinking artists — rapper, singer, producer and music ambassador. Spanning hip hop, trap, electronic and acoustic sounds and weaving te reo Māori throughout his work, Rei has toured internationally and earned six Waiata Māori Awards across a career now fifteen years deep. His latest album ‘Moisturise & Decolonise’ continues his journey of cultural connection and artistic evolution.', btn: null },
-        kenzie:    { title: 'Kenzie From Welly', meta: 'Fri 10 July | Eva Pub | 8:30PM', img: 'img/kenzie.jpg', desc: 'Born and raised in Pōneke to Māori and Samoan parents, Kenzie From Welly is a natural storyteller whose hip hop is rooted in culture, community and resistance. A 2025 Pacific Music Award winner for Best Pacific Hip Hop Artist, her debut album ‘Greenstone Door’ is a bold and deeply personal statement. She performs on Matariki night itself — the perfect setting for an artist whose music is always about coming home.', btn: null },
+        hollie:    { title: 'Hollie Smith with Darren Mathiassen', meta: 'Wed 8 July | Meow | 8:00PM', img: 'img/hollie-smith.jpg', desc: 'One of New Zealand’s most powerful and soulful voices, Hollie Smith has earned her place as a true icon of Aotearoa music. With a voice that moves between raw vulnerability and commanding power, she performs an intimate Matariki Nights set at Meow accompanied by Darren Mathiassen, with support from Jade Merematira and Bri Louise. Expect stripped-back arrangements that let her extraordinary talent shine, in one of Wellington’s best live music rooms.', btn: 'https://meow.flicket.co.nz/events/47809240-6ff8-4cf6-8a89-3c02e5edc70c' },
+        rei:       { title: 'Rei', meta: 'Sat 11 July | Lulu’s | 10:00PM', img: 'img/rei.jpg', desc: 'Callum Rei McDougall (Ngāti Raukawa) is one of Aotearoa’s most prolific and forward-thinking artists — rapper, singer, producer and music ambassador. Spanning hip hop, trap, electronic and acoustic sounds and weaving te reo Māori throughout his work, Rei has toured internationally and earned six Waiata Māori Awards across a career now fifteen years deep. His latest album ‘Moisturise & Decolonise’ continues his journey of cultural connection and artistic evolution.', btn: null },
+        kenzie:    { title: 'Kenzie From Welly', meta: 'Fri 10 July | Eva Pub | 7:00PM', img: 'img/kenzie.jpg', desc: 'Born and raised in Pōneke to Māori and Samoan parents, Kenzie From Welly is a natural storyteller whose hip hop is rooted in culture, community and resistance. A 2025 Pacific Music Award winner for Best Pacific Hip Hop Artist, her debut album ‘Greenstone Door’ is a bold and deeply personal statement. She performs on Matariki night itself — the perfect setting for an artist whose music is always about coming home.', btn: null },
         comedy:    { title: 'Comedy Showcase', meta: 'Sat 11 July | Fringe Bar | 6:30PM–7:30PM', img: 'img/ben-hurley.jpg', desc: 'A special Matariki Nights comedy showcase at the Fringe Bar, headlined by Ben Hurley — one of New Zealand’s most beloved stand-up comedians. Ben has performed across the country and internationally, known for his sharp wit, warmth and effortlessly engaging stage presence. A perfect way to celebrate the season with your whānau and friends.', btn: 'https://www.eventfinda.co.nz/2026/matariki-laughs-with-ben-hurley-and-friends/wellington' },
-        mokos:     { title: 'The Mokos', meta: 'Sat 11 July | Rogue & Vagabond', img: 'img/mokos.jpg', desc: 'The Mokos are a Wellington band bringing an energetic blend of contemporary sounds to the Rogue & Vagabond stage on Saturday night. A tight live act with a loyal local following, they’re the ideal way to round out a big night in the Courtenay Precinct during Matariki Nights.', btn: null },
+        mokos:     { title: 'The Mokos', meta: 'Sat 11 July | Rogue & Vagabond | 9:30PM', img: 'img/mokos.jpg', desc: 'The Mokos are a Wellington band bringing an energetic blend of contemporary sounds to the Rogue & Vagabond stage on Saturday night. A tight live act with a loyal local following, they’re the ideal way to round out a big night in the Courtenay Precinct during Matariki Nights.', btn: null },
         soulpaua:  { title: 'Soul Paua', meta: 'Date & Venue TBC', img: 'img/soul-paua.jpg', desc: 'Soul Paua are a Wellington institution — brothers Jerry and Maurice Banse performing original waiata in te reo Māori, blending soul, folk and rock into something entirely their own. With a debut album ‘Pohewa’ (The Dreamer) that earned an NZ Music Awards nomination, and a legacy that includes performing at Te Papa and the Vancouver Winter Olympics Cultural Olympiad, Soul Paua are a deeply fitting addition to the Matariki Nights programme. Date and venue to be confirmed.', btn: null },
         oldbailey: { title: 'Stars, Sparkle & Sweetness', meta: '8–12 July | The Old Bailey', img: 'img/old_bailey.jpg', desc: 'For a limited time during Matariki Nights, The Old Bailey is serving up the Matariki Glow — a bright and sparkling pineapple daiquiri-inspired cocktail made to shine like the stars. Pair it with their Kiwi, Strawberry and Mānuka Honey Pavlova, a sweet seasonal take on a Kiwi classic. Cocktail $16.80, Pavlova $16.', btn: 'https://theoldbailey.co.nz/events/matariki-nights/' },
         phuthai:   { title: 'Tom Yum Baked Mussels', meta: '8–12 July | PhuThai Esarn Restaurant', img: 'img/phuthai.jpg', desc: 'PhuThai Esarn is celebrating Matariki with their Tom Yum Baked Mussels — juicy mussels in a fragrant tom yum sauce, topped with melted cheese. A fusion of Thai and Kiwi flavours that makes for a perfect Matariki Nights bite. $16.90.', btn: 'https://phuthaiesarn.co.nz' },
